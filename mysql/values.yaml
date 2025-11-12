@@ -1,0 +1,27 @@
+image:
+  repository: mysql
+  tag: "8.0"
+  pullPolicy: IfNotPresent
+
+auth:
+  rootPassword: "rootpass123"
+  user: "kaizen"
+  password: "Hello123!"
+  database: "hello"
+
+service:
+  port: 3306
+
+persistence:
+  enabled: true
+  accessModes: ["ReadWriteOnce"]
+  size: 8Gi
+  storageClassName: ""  
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
