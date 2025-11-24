@@ -48,6 +48,11 @@ spec:
             limits:
               cpu: {{ .Values.deployment.resources.limits.cpu | quote }}
               memory: {{ .Values.deployment.resources.limits.memory | quote }}
+          env:
+{{- range $key, $value := .Values.env }}
+            - name: {{ $key }}
+              value: "{{ $value }}"
+{{- end }}
           envFrom:
             - configMapRef:
                 name: {{ .Values.deployment.name }}-config

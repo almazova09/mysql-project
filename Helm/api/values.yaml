@@ -6,7 +6,7 @@ image:
 
 config:
   PORT: "3001"
-  DBHOST: "mysql.database.svc.cluster.local"
+  DBHOST: "mysql.apps.svc.cluster.local"
   DBPORT: "3306"
   DB: "hello"
 

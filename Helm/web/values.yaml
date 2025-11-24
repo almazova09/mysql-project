@@ -44,7 +44,7 @@ hpa:
 
 env:
   NODE_ENV: "production"
-  API_URL: "http://api-service.api.svc.cluster.local:3001"  
+  API_URL: "http://api:3001"  
 
 secrets:
   DB_USER: ""
