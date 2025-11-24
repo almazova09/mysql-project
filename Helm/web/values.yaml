@@ -4,7 +4,7 @@ deployment:
   port: 3000
   image:
     repository: myprivateregistry15.azurecr.io/web
-    tag: v1                              
+    tag: latest                              
     pullSecrets:
       - name: acr-auth
 
