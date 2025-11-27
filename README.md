@@ -3,7 +3,7 @@
 ```
 Terraform in **separate folder**:
 
-```
+```bash
 ├── Terraform
 │   ├── main.tf
 │   ├── terraform.tfstate
@@ -12,6 +12,7 @@ Terraform in **separate folder**:
 
 Below is an example of deploying **MySQL**, **API**, and **Web** Helm charts using Terraform. This automates the full application deployment into AKS.
 
+```
 ## 1.1 Terraform Providers
 
 ```hcl
