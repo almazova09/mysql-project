@@ -1,9 +1,10 @@
 # 1. Deploy Helm Charts with Terraform
 
-```
-Terraform in **separate folder**:
+## 📁 Terraform in a **separate folder**
 
-```
+Recommended project structure:
+
+```bash
 ├── Terraform
 │   ├── main.tf
 │   ├── terraform.tfstate
@@ -12,7 +13,7 @@ Terraform in **separate folder**:
 
 Below is an example of deploying **MySQL**, **API**, and **Web** Helm charts using Terraform. This automates the full application deployment into AKS.
 
-```
+---
 
 ## 1.1 Terraform Providers
 
@@ -197,13 +198,17 @@ resource "helm_release" "web" {
     value = "http://api.apps.svc.cluster.local:3001"
   }
 }
+```
 
-Deploy:
+---
+
+## 🚀 Deploy Using Terraform
 
 ```bash
 terraform init
 terraform apply -auto-approve
 ```
+
 ---
 
 # 2. ArgoCD
